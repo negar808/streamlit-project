@@ -39,7 +39,7 @@ if selected_page=="📂 form":
             else:
                 st.error("you must agree to the terms and conditions")
 
-if selected_page=="📔csv uploader":
+elif selected_page=="📔csv uploader":
     st.header("CSV uploader and interactive table")
     max_size=200
     uploaded_file=st.file_uploader(
@@ -100,7 +100,7 @@ if selected_page=="📔csv uploader":
 
 
 
-if selected_page=="🖼️image gallery":
+elif selected_page=="🖼️image gallery":
         
         max_size=200*1024*1024
         st.header("image gallery with batch upload")
@@ -125,6 +125,7 @@ if selected_page=="🖼️image gallery":
             st.image(image, caption=uploaded_file.name, use_column_width=True)
 else:
     st.info("📂 Click 'Browse files' to upload images.")
+
 
 
 
